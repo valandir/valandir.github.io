@@ -1,9 +1,9 @@
 #target-canvas {
 	background:silver;
-	height:70vh;
+	height:60vh;
 	width:70%;
 	margin:auto;
-	background-size: 40px 40px;
+	background-size: 10% 10%;
     background-image: linear-gradient(to right, grey 1px, transparent 1px), 
     	linear-gradient(to bottom, grey 1px, transparent 1px);
 	
