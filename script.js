@@ -38,18 +38,18 @@ function fletchPlace(ev) {
 		if(ev.deltaX > tearTolerance || ev.deltaX < -tearTolerance) {
 			console.log("Have a Combination tear");
 			if(ev.deltaY > 10) {
-				resultsElement.textContent = 'Results: Combination tear - Resolve vertical tear first. Move nocking point up or move rest down.';
+				resultsElement.textContent = 'Combination tear - Resolve vertical tear first. Move nocking point up or move rest down.';
 			} else if(ev.deltaY < -10) {
-				resultsElement.textContent = 'Results: Combination tear - Resolve vertical tear first. Move nocking point down, or move rest up.';
+				resultsElement.textContent = 'Combination tear - Resolve vertical tear first. Move nocking point down, or move rest up.';
 			}
 			// resultsElement.textContent = 'Results: Combination tear - Resolve vertical tear first.';
 			} else {
 				console.log("Pure vert tear");
 				
 				if(ev.deltaY > 10) {
-					resultsElement.textContent = 'Results: Vertical tear. Move nocking point up or move rest down.';
+					resultsElement.textContent = 'Vertical tear. Move nocking point up or move rest down.';
 				} else if(ev.deltaY < -10) {
-					resultsElement.textContent = 'Results: Vertical tear. Move nocking point down, or move rest up.';
+					resultsElement.textContent = 'Vertical tear. Move nocking point down, or move rest up.';
 				}
 				// resultsElement.textContent = 'Results: Vertical tear.'
 			}
@@ -58,9 +58,9 @@ function fletchPlace(ev) {
 			// This section needs knowledge of the archer!
 			if(ev.deltaX > 10) {
 				
-				resultsElement.textContent = 'Results: Horizontal tear. Move rest position.';
+				resultsElement.textContent = 'Horizontal tear. Move rest position.';
 			} else if(ev.deltaX < -10) {
-				resultsElement.textContent = 'Results: Horizontal tear. Move rest position.';
+				resultsElement.textContent = 'Horizontal tear. Move rest position.';
 			}
 			// resultsElement.textContent = 'Results: Horizontal tear.'
 		}
